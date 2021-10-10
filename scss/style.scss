@@ -1,0 +1,151 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+// 
+// Primary
+$primary-light-red: hsl(356,
+100%,
+66%);
+$primary-very-light-red: hsl(355,
+100%,
+74%);
+$primary-very-dark-blue: hsl(208,
+49%,
+24%);
+// 
+// Neutral
+$neutral-white: hsl(0,
+0%,
+100%);
+$neutral-grayish-blue: hsl(240,
+2%,
+79%);
+$neutral-very-dark-grayish-blue: hsl(207,
+13%,
+34%);
+$neutral-very-dark-black-blue: hsl(240,
+10%,
+16%);
+// 
+// Gradient
+$gradient-very-light-red: hsl(13,
+100%,
+72%);
+$gradient-light-red: hsl(353,
+100%,
+62%);
+$gradient-very-dark-gray-blue: hsl(237,
+17%,
+21%);
+$gradient-very-dark-desaturated-blue: hsl(237,
+23%,
+32%);
+$font-family-ubuntu:'Ubuntu',
+sans-serif;
+$font-family-overpass: 'Overpass',
+sans-serif;
+// 
+// spacers
+$spacer: 1rem;
+$spacers: ( 0: 0,
+1: $spacer * .25,
+2: $spacer * .5,
+3: $spacer,
+4: $spacer * 1.5,
+5: $spacer * 3,
+);
+// 
+// Feel free to remove these styles or customise in your own stylesheet 👍
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+// 
+// 
+// 
+body {
+    font-size: 16px;
+    font-family: $font-family-ubuntu;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+// header
+header {
+    color: $neutral-white;
+    background-image: linear-gradient(to right, $gradient-very-light-red, $gradient-light-red);
+    border-bottom-left-radius: 10rem;
+    nav.navbar {
+        ul li a {
+            color: $neutral-white;
+            font-family: $font-family-ubuntu;
+            ul li a {
+                color: $neutral-white;
+            }
+        }
+        a.cta-btn {
+            background-color: $neutral-white;
+            color: $primary-light-red;
+        }
+    }
+    .hero-banner {
+        h1 {
+            font-family: $font-family-overpass;
+            font-weight: 700;
+        }
+        .btn {
+            font-weight: 500;
+        }
+    }
+    a.cta-btn {
+        background-color: $neutral-white;
+        color: $primary-light-red;
+    }
+}
+
+.section-2 {
+    height: 500px;
+    overflow: hidden;
+    color: $neutral-white;
+    background-image: url("/images/bg-pattern-circles.svg"), linear-gradient(to right, $gradient-very-dark-gray-blue, $gradient-very-dark-desaturated-blue);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, center;
+    border-bottom-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+}
+
+.container {
+    max-width: 90%;
+}
+
+.btn {
+    width: 150px;
+    border-radius: 1.5rem;
+    border: solid 1px $neutral-white;
+    color: $neutral-white;
+}
+
+.illustration-img-container {
+    margin-right: -15%;
+}
+
+footer {
+    background-color: $neutral-very-dark-black-blue;
+    color: $neutral-white;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        a {
+            text-decoration: none;
+            color: $neutral-grayish-blue;
+        }
+    }
+}

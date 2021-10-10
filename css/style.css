@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+header {
+  color: white;
+  background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+  border-bottom-left-radius: 10rem;
+}
+header nav.navbar ul li a {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+header nav.navbar ul li a ul li a {
+  color: white;
+}
+header nav.navbar a.cta-btn {
+  background-color: white;
+  color: #ff525d;
+}
+header .hero-banner h1 {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+}
+header .hero-banner .btn {
+  font-weight: 500;
+}
+header a.cta-btn {
+  background-color: white;
+  color: #ff525d;
+}
+
+.section-2 {
+  height: 500px;
+  overflow: hidden;
+  color: white;
+  background-image: url("/images/bg-pattern-circles.svg"), linear-gradient(to right, #2c2d3f, #3f4164);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, center;
+  border-bottom-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.btn {
+  width: 150px;
+  border-radius: 1.5rem;
+  border: solid 1px white;
+  color: white;
+}
+
+.illustration-img-container {
+  margin-right: -15%;
+}
+
+footer {
+  background-color: #25252d;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul a {
+  text-decoration: none;
+  color: #c8c8cb;
+}
+
+/*# sourceMappingURL=style.css.map */
