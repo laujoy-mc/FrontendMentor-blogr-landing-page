@@ -78,6 +78,22 @@ body {
     overflow-x: hidden;
 }
 
+.primary-bg-color {
+    background-color: $neutral-very-dark-black-blue;
+    ul li.nav-item {
+        a,
+        li a {
+            color: $primary-very-dark-blue;
+        }
+    }
+    .navbar-collapse {
+        background-color: transparent;
+        ul li a {
+            color: white;
+        }
+    }
+}
+
 // nav
 nav.navbar {
     ul li a {
@@ -90,18 +106,6 @@ nav.navbar {
     a.cta-btn {
         background-color: $neutral-white;
         color: $primary-light-red;
-    }
-    .navbar-collapse.collapse.show {
-        background-color: white;
-        border-radius: 5px;
-        ul li.nav-item a:not(.cta-btn) {
-            color: $primary-very-dark-blue;
-        }
-        a.cta-btn {
-            color: white;
-            margin: auto;
-            background-image: linear-gradient(to right, $gradient-very-light-red, $gradient-light-red);
-        }
     }
 }
 
@@ -163,3 +167,48 @@ footer {
         }
     }
 }
+
+// media query
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    nav {
+        .navbar-collapse.collapse {
+            background-color: white;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    nav {
+        .navbar-collapse.collapse {
+            background-color: white;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    nav {
+        .navbar-collapse {
+            text-align: center;
+            border-radius: 5px;
+            background-color: $neutral-white;
+            ul li a {
+                text-align: center;
+                color: $primary-very-dark-blue;
+            }
+            a.cta-btn {
+                color: white;
+                margin: auto;
+                background-image: linear-gradient(to right, $gradient-very-light-red, $gradient-light-red);
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {}
