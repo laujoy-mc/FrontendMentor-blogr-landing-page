@@ -78,24 +78,38 @@ body {
     overflow-x: hidden;
 }
 
+// nav
+nav.navbar {
+    ul li a {
+        color: $neutral-white;
+        font-family: $font-family-ubuntu;
+        ul li a {
+            color: $neutral-white;
+        }
+    }
+    a.cta-btn {
+        background-color: $neutral-white;
+        color: $primary-light-red;
+    }
+    .navbar-collapse.collapse.show {
+        background-color: white;
+        border-radius: 5px;
+        ul li.nav-item a:not(.cta-btn) {
+            color: $primary-very-dark-blue;
+        }
+        a.cta-btn {
+            color: white;
+            margin: auto;
+            background-image: linear-gradient(to right, $gradient-very-light-red, $gradient-light-red);
+        }
+    }
+}
+
 // header
 header {
     color: $neutral-white;
     background-image: linear-gradient(to right, $gradient-very-light-red, $gradient-light-red);
     border-bottom-left-radius: 10rem;
-    nav.navbar {
-        ul li a {
-            color: $neutral-white;
-            font-family: $font-family-ubuntu;
-            ul li a {
-                color: $neutral-white;
-            }
-        }
-        a.cta-btn {
-            background-color: $neutral-white;
-            color: $primary-light-red;
-        }
-    }
     .hero-banner {
         h1 {
             font-family: $font-family-overpass;
@@ -112,7 +126,7 @@ header {
 }
 
 .section-2 {
-    height: 500px;
+    min-height: 500px;
     overflow: hidden;
     color: $neutral-white;
     background-image: url("/images/bg-pattern-circles.svg"), linear-gradient(to right, $gradient-very-dark-gray-blue, $gradient-very-dark-desaturated-blue);
@@ -134,7 +148,7 @@ header {
 }
 
 .illustration-img-container {
-    margin-right: -15%;
+    // margin-right: -15%;
 }
 
 footer {
